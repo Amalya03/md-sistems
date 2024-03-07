@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "MontserratVariables";
+  src: local("MontserratVariables"),
+    url("../public/assets/fonts/montserrat/veriable/Montserrat-VariableFont_wght.ttf")
+      format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: MontserratVariables !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body * {
+  font-family: MontserratVariables !important;
+}
+
+code {
+  font-family: MontserratVariables;
+}
+
+.fade {
+  opacity: 1 !important;
+}
+
+.modal-backdrop {
+  opacity: 0.5 !important;
+}
+
+.custom-modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+}
+
+.modal-content {
+  position: absolute !important;
+  top: 50% !important;
+}

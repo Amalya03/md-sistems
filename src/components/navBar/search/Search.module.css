@@ -1,0 +1,29 @@
+.input {
+  background: #f5f5f5;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 300px;
+  color: inherit;
+  padding: 8px 48px;
+  font-weight: 600;
+}
+
+.input:focus-visible {
+  outline: none;
+}
+
+.search_img {
+  left: 0px;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+
+.search_img:hover {
+  cursor: pointer;
+  background: #e5e5e5;
+  border-radius: 100%;
+  transition: 1s;
+}

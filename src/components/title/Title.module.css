@@ -1,0 +1,23 @@
+.text {
+  color: var(--black);
+}
+
+.font_size_35 {
+  font-size: 35px;
+}
+
+.font_size_16 {
+  font-size: 16px;
+}
+
+.font_weight_600 {
+  font-weight: 600;
+}
+
+.padding_bottom_10 {
+    padding-bottom: 10px;
+}
+
+.font_weight_800 {
+  font-weight: 800;
+}

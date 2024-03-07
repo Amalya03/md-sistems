@@ -1,0 +1,15 @@
+.data_container {
+  background-color: rgb(214, 222, 232);
+}
+
+.max_width_1100 {
+  max-width: 1100px;
+}
+
+.gap_50 {
+  gap: 50px;
+}
+
+.gap_150 {
+  gap: 150px;
+}

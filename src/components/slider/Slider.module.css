@@ -1,0 +1,35 @@
+.item {
+  height: 470px;
+}
+
+.gap_15 {
+  gap: 15px !important;
+}
+
+.padding_bottom_50 {
+  padding-bottom: 50px !important;
+}
+
+.item:focus-visible {
+  border: none;
+  outline: none;
+}
+.item_container div {
+  display: flex;
+  gap: 20px;
+}
+
+.item:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: 1s;
+}
+
+.gap_50 {
+  gap: 30px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}

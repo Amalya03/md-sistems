@@ -1,0 +1,25 @@
+.gap_50 {
+    gap: 50px;
+}
+
+.gap_20 {
+    gap: 20px;
+}
+
+.data_container {
+    max-width: calc(4 * 300px + 3 * 20px);
+}
+
+.no_data_container {
+    gap: 10px;
+    height: calc(100vh - 80px - 100px - 100px - 50px) !important; 
+}
+
+.no_data_container span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.no_data_container img {
+    max-width: 50px;
+}

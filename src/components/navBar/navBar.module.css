@@ -1,0 +1,8 @@
+@import url("../../styles/Variables.css");
+
+.navBar_container {
+  background: var(--white);
+  height: 80px;
+  padding: 25px;
+}
+

@@ -1,0 +1,9 @@
+.menu_item {
+    color: var(--black);
+    font-weight: 550;
+    font-size: 18px;
+  }
+  
+  .gap_30 {
+    gap: 30px;
+  }

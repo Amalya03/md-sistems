@@ -1,0 +1,62 @@
+.card_container {
+    width: 300px;
+    height: 420px;
+    gap: 10px;
+    box-shadow: 6px 6px 13px 0px rgba(118, 118, 118, 25%);
+}
+
+.img_container {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.text {
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--black)
+}
+
+.manifacture {
+    font-size: 14px;
+    color: #707072;
+    padding-bottom: 5px;
+}
+
+.price {
+    font-size: 16px;
+    color: var(--black);
+}
+
+.padding_x_10 {
+    padding: 0 10px;
+}
+
+.padding_10 {
+    padding: 0 10px 20px;
+}
+
+
+.delete_button {
+   color: #808080;
+   font-size: 18px;
+   font-weight: 500;
+}
+
+.delete_button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.delete_button:focus {
+    outline: none;
+}
+
+
+

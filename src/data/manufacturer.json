@@ -1,0 +1,44 @@
+{
+  "manufacturer": [
+    {
+      "id": "nike",
+      "name": "Nike"
+    },
+    {
+      "id": "adidas",
+      "name": "Adidas"
+    },
+    {
+      "id": "puma",
+      "name": "Puma"
+    },
+    {
+      "id": "vans",
+      "name": "Vans"
+    },
+    {
+      "id": "underArmour",
+      "name": "Under Armour"
+    },
+    {
+      "id": "newBalance",
+      "name": "New Balance"
+    },
+    {
+      "id": "asics",
+      "name": "ASICS"
+    },
+    {
+      "id": "reebok",
+      "name": "Reebok"
+    },
+    {
+      "id": "columbiaSportswear",
+      "name": "Columbia Sportswear"
+    },
+    {
+      "id": "fila",
+      "name": "Fila"
+    }
+  ]
+}

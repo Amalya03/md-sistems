@@ -1,0 +1,27 @@
+.top_100 {
+  top: calc(100% + 60px) !important;
+}
+
+.right_100 {
+  right: 100px !important;
+}
+
+.arrow_buttons {
+  background: var(--white) !important;
+  width: 78px !important;
+  height: 48px !important;
+  box-shadow: 8px 6px 13px 0px rgba(118, 118, 118, 25%);
+  border-radius: 70% !important;
+}
+
+.arrow_buttons::before {
+  display: none;
+}
+
+.right_200 {
+  right: 200px;
+}
+
+.left_auto {
+  left: auto !important;
+}

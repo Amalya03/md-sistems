@@ -1,0 +1,45 @@
+.text {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.gap_50 {
+    gap: 50px;
+}
+
+.modal_container {
+    height: 160px;
+    padding: 20px 0;
+}
+
+/* .confirming_button:focus-visible {
+    outline: none;
+}
+
+.confirming_button:focus {
+    outline: none;
+}
+
+.confirming_button:hover {
+    opacity: 0.5;
+}
+
+.confirming_button {
+    border-radius: 5px;
+    font-size: 14px;
+    height: 40px;
+    font-weight: 500;
+    width: 140px;
+}
+
+.active_button {
+    background: var(--grey);
+    color: var(--white);
+}
+
+.passive_button {
+    background: var(--white);
+    color: var(--grey) ;
+    box-shadow: 2px 3px 4px rgba(119, 136, 153,.5);
+    color: var(--mainColor);
+} */
