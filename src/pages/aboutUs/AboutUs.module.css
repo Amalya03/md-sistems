@@ -1,0 +1,39 @@
+.container {
+    height: calc(100vh - 200px);
+    gap: 50px;
+}
+
+.logo_container {
+    width: 30%;
+}
+
+.text_container {
+    width: 60%;
+    gap: 20px;
+}
+
+.company_info {
+    max-width: 1000px;
+}
+
+.gap_50 {
+    gap: 50px;
+}
+
+.company_info_container{
+    /* height: calc(100vh - 200px - 50px - 300px); */
+    padding-bottom: 50px;
+    padding: 0 20px 50px 20px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.text {
+    font-size: 14px;
+    /* font-weight: 500; */
+    color: var(--black);
+}

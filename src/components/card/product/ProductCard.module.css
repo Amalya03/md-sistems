@@ -20,7 +20,8 @@
 .title {
     font-weight: 600;
     font-size: 16px;
-    color: var(--black)
+    color: var(--black);
+    max-width: calc(100% - 10px - 35px);
 }
 
 .manifacture {
@@ -58,5 +59,15 @@
     outline: none;
 }
 
+.img_edit {
+max-width: 30px;
+max-height: 20px;
+right: 10px;
+}
+
+.img_edit img {
+    height: 100%;
+    width: 100%;
+}
 
 

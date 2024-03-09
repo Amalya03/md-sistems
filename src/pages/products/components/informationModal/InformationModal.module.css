@@ -1,0 +1,22 @@
+.information_item {
+    height: 50px;
+    padding: 10px 20px;
+    box-shadow: 0 3px 4px rgba(119,136,153,.5);
+}
+
+.information_item:focus {
+    outline: none;
+}
+
+.w_70 {
+    width: 70%;
+}
+
+.gap_20 {
+    gap: 20px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+}

@@ -10,27 +10,21 @@ const todoSlice = createSlice({
   },
 
   reducers: {
-    addTodo(state, action) {
-      state.products.push({
-      });
+    addProduct(state, action) {
+      state.products.push(action.payload);
     },
 
-    toggleComplete(state, action) {
-      const toggledTodo = state.todos.find(
-        (todo) => todo.id === action.payload.id
-      );
-      toggledTodo.completed = !toggledTodo.completed;
+    editProduct(state, action) {
+      let objIndex = state.products.findIndex((item) => item.id === action.payload.id);
+      state.products[objIndex] = action.payload
     },
 
     removeProduct(state, action) {
-      console.log(state, action);
-
-      state.products = state.products.filter((item) => item.id !== action.
-      payload
+      state.products = state.products.filter((item) => item.id !== action.payload
       );
     },
   },
 });
 
-export const { addTodo, toggleComplete, removeProduct } = todoSlice.actions;
+export const { addProduct, editProduct, removeProduct } = todoSlice.actions;
 export default todoSlice.reducer;

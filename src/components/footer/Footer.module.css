@@ -1,0 +1,5 @@
+.footer_container {
+    background: var(--grey);
+    height: 300px;
+    bottom: 0;
+} 

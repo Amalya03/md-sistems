@@ -23,3 +23,11 @@
 .no_data_container img {
     max-width: 50px;
 }
+
+.img_container {
+    max-width: 45px;
+}
+
+.img_container img {
+    width: 100%;
+}
