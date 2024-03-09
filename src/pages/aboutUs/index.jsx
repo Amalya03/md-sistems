@@ -1,6 +1,7 @@
 import React from "react";
 
 import classes from "./AboutUs.module.css";
+
 import PageTitle from "../../components/pageTitle";
 
 const AboutUs = () => {

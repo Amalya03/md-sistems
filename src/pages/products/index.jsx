@@ -53,7 +53,7 @@ const Products = () => {
       dispatch(editProduct(editableInfo))
     } else {
       editableInfo['id'] = uuidv4()
-      editableInfo['image'] = "./assets/products/nike.png"
+      editableInfo['image'] = "./assets/products/card/nike.png"
       dispatch(addProduct(editableInfo))
     }
     setShow('')

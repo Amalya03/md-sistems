@@ -7,6 +7,7 @@ import Image from "./components/image";
 import Carousel from "../../components/slider";
 import Description from "./components/description";
 import ProductsData from "./products";
+import ContactUs from "../../components/contactUs";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         </div>
       </div>
       <Carousel/>
+      <ContactUs/>
       <ProductsData/>
     </div>
   );

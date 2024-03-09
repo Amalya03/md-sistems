@@ -9,7 +9,7 @@
       "manufacturer": "Nike",
       "quantity": "10",
       "monetaryUnites": "$",
-      "image": "./assets/products/nike.png"
+      "image": "./assets/products/card/nike.png"
     },
     {
       "id": "",
@@ -20,7 +20,7 @@
       "manufacturer": "Adidas",
       "quantity": "5",
       "monetaryUnites": "$",
-      "image": "./assets/products/nike1.png"
+      "image": "./assets/products/card/nike1.png"
     },
     {
       "id": "",
@@ -31,7 +31,7 @@
       "manufacturer": "Puma",
       "quantity": "9",
       "monetaryUnites": "$",
-      "image": "./assets/products/nike2.png"
+      "image": "./assets/products/card/nike2.png"
     },
     {
       "id": "",
@@ -42,7 +42,7 @@
       "manufacturer": "Vans",
       "quantity": "20",
       "monetaryUnites": "$",
-      "image": "./assets/products/nike3.png"
+      "image": "./assets/products/card/nike3.png"
     },
     {
       "id": "",
@@ -53,7 +53,7 @@
       "manufacturer": "Under Armour",
       "quantity": "10",
       "monetaryUnites": "$",
-      "image": "./assets/products/nike4.png"
+      "image": "./assets/products/card/nike4.png"
     },
     {
       "id": "",
@@ -64,7 +64,7 @@
       "manufacturer": "New Balance",
       "quantity": "32",
       "monetaryUnites": "$",
-      "image": "./assets/products/nike5.png"
+      "image": "./assets/products/card/nike5.png"
     },
     {
       "id": "",
@@ -75,7 +75,7 @@
       "manufacturer": "ASICS",
       "quantity": "25",
       "monetaryUnites": "$",
-      "image": "./assets/products/nike6.png"
+      "image": "./assets/products/card/nike6.png"
     },
     {
       "id": "",
@@ -86,7 +86,7 @@
       "manufacturer": "Reebok",
       "quantity": "35",
       "monetaryUnites": "$",
-      "image": "./assets/products/nike7.png"
+      "image": "./assets/products/card/nike7.png"
     },
     {
       "id": "",
@@ -97,7 +97,7 @@
       "manufacturer": "Columbia Sportswear",
       "quantity": "25",
       "monetaryUnites": "$",
-      "image": "./assets/products/nike8.png"
+      "image": "./assets/products/card/nike8.png"
     },
     {
       "id": "",
@@ -108,7 +108,7 @@
       "manufacturer": "Fila",
       "quantity": "15",
       "monetaryUnites": "$",
-      "image": "./assets/products/nike9.png"
+      "image": "./assets/products/card/nike9.png"
     }
   ]
 }
