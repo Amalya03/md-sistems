@@ -4,23 +4,22 @@ import { useDispatch, useSelector } from "react-redux";
 
 import classes from "./Products.module.css";
 
+import { removeProduct } from "../../../store/productsSlice";
+
 import Title from "../../../components/title";
 import { Button } from "../../../components/buttons";
-import { removeProduct } from "../../../store/todoSlice";
 import ProductCard from "../../../components/card/product";
-import VerificationModal from "../../../components/modal/delete";
+import VerificationModal from "../../../components/modal/verificationModal";
 
-
-const ProductsData = (props) => {
-  const {status, filteredData, setFilteredData, editProduct} = props
-
+const ProductsData = ({ status, filteredData, setFilteredData, editProduct }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  
   const [show, setShow] = useState(false);
   const [productId, setProductId] = useState("");
 
-  const data = useSelector((item) => item.products.products); 
-  const productData = !status ? data?.slice(0, 5) : filteredData
+  const data = useSelector((item) => item.products.products);
+  const productData = !status ? data?.slice(0, 5) : filteredData;
 
   const showModal = (id) => {
     setProductId(id);
@@ -28,25 +27,32 @@ const ProductsData = (props) => {
   };
 
   const deleteProduct = async (id) => {
-     dispatch(removeProduct(id));
-     setShow(false);
-    const data = filteredData.filter((item) => item.id !== id)
-    setFilteredData(data)
+    dispatch(removeProduct(id));
+    setShow(false);
   };
 
   return (
     <>
-      <div
+      <section
         className={` ${classes.gap_50} d-flex flex-wrap justify-content-center ${classes.padding_bottom_50}`}
       >
-        {!status && <Title />}
+        {!status && (
+          <Title
+            text={{
+              firstText: "Women's Week",
+              secondText: "The Celebration Is On",
+              lastText:
+                "Fresh voices, fire fits, and new kicks. Shop a brand new collection inspired by strong women.",
+            }}
+          />
+        )}
         <div
           className={`d-flex flex-wrap w-100 justify-content-center ${classes.gap_20}`}
         >
           {productData?.map((item, index) => {
             return (
               <ProductCard
-                editProduct={() => editProduct(item.id)} 
+                editProduct={() => editProduct(item.id)}
                 status={status}
                 deleteProduct={() => showModal(item.id)}
                 key={`${item.title}_${index}`}
@@ -59,8 +65,17 @@ const ProductsData = (props) => {
             );
           })}
         </div>
-        {!status && <Button text='See All' status={true} onClick={() => {navigate('/products'); window.scrollTo(0,0)}}/>}
-      </div>
+        {!status && (
+          <Button
+            text="See All"
+            status={true}
+            onClick={() => {
+              navigate("/products");
+              window.scrollTo(0, 0);
+            }}
+          />
+        )}
+      </section>
       <VerificationModal
         show={show}
         onHide={() => setShow(false)}

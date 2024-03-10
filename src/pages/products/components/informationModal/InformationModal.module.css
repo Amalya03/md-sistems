@@ -12,6 +12,9 @@
     width: 70%;
 }
 
+.gap_10 {
+    gap: 10px;
+}
 .gap_20 {
     gap: 20px;
 }
@@ -19,4 +22,19 @@
 .title {
     font-size: 16px;
     font-weight: 600;
+}
+
+.message {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+}
+
+.color_red {
+    color: red;
+}
+
+.color_green {
+    color: green;
 }

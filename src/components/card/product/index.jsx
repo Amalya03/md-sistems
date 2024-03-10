@@ -2,39 +2,32 @@ import React from "react";
 
 import classes from "./ProductCard.module.css";
 
+import Image from "./components/image";
+import Titles from "./components/titles";
+import EditButton from "./components/buttons/edit";
+import DeleteButton from "./components/buttons/delete";
+
 const ProductCard = (props) => {
-  const { image, deleteProduct, status, editProduct} = props;
+  const {
+    image,
+    deleteProduct,
+    status,
+    editProduct,
+    monetaryUnites,
+    price,
+    title,
+  } = props;
 
   return (
     <div className={`${classes.card_container} d-flex flex-wrap`}>
-      <div className={classes.img_container}>
-        <img src={image} alt="" className="w-100 h-100" />
+      <Image image={image} />
+      <div
+        className={`d-flex flex-wrap ${classes.padding_x_10} w-100 position-relative`}
+      >
+        <Titles monetaryUnites={monetaryUnites} price={price} title={title} />
+        {status && <EditButton onClick={editProduct} />}
       </div>
-
-    
-      <div className={`d-flex flex-wrap ${classes.padding_x_10} w-100 position-relative`}>
-        {["title", "price"].map((item, index) => {
-          return (
-            <span
-              key={item}
-              className={`w-100 ${classes.text} ${classes[item]}`}
-            >
-              {`${props[item]} ${index === 1 ? props['monetaryUnites'] : ''}`}
-            </span>
-          );
-        })}
-       {status && <button className={`${classes.img_edit} position-absolute border-0 p-0 bg-transparent`} onClick={editProduct}>
-        <img src='./assets/products/card/edit.svg' alt="edit"/>
-        </button>}
-      </div>
-      {status && <div className={`w-100 d-flex justify-content-end ${classes.padding_10}`}>
-        <button
-          className={`bg-transparent border-0 ${classes.delete_button}`}
-          onClick={deleteProduct}
-        >
-          Delete
-        </button>
-      </div>}
+      {status && <DeleteButton onClick={deleteProduct} />}
     </div>
   );
 };

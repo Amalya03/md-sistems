@@ -29,3 +29,7 @@
   box-shadow: 2px 3px 4px rgba(119, 136, 153, 0.5);
   color: var(--mainColor);
 }
+
+.confirming_button:disabled {
+  opacity: 0.5;
+}

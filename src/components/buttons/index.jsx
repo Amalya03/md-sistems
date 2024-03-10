@@ -1,12 +1,14 @@
+import React from "react";
+
 import classes from "./Buttons.module.css";
 
-export const Button = (props) => {
-  const { onClick, text, status} = props;
+export const Button = ({ onClick, text, status, type, disabled}) => {
+  const buttonClassName = `${classes.confirming_button} ${
+    status ? classes.active_button : classes.passive_button
+  }`;
+
   return (
-    <button
-      onClick={onClick}
-      className={`border-0 ${classes.confirming_button} ${status ? classes.active_button : classes.passive_button}`}
-    >
+    <button onClick={onClick} disabled={disabled} type={type} className={`border-0 ${buttonClassName}`}>
       {text}
     </button>
   );

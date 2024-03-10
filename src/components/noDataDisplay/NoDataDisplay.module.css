@@ -1,0 +1,13 @@
+.no_data_container {
+    gap: 10px;
+    height: calc(100vh - 80px - 100px - 100px - 50px) !important; 
+}
+
+.no_data_container span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.no_data_container img {
+    max-width: 50px;
+}

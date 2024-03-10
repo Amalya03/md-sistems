@@ -10,8 +10,15 @@ import { slider } from "../../utils/halpers/slider/slider";
 
 const Carousel = () => {
   return (
-    <div className={`w-100 d-flex flex-column  ${classes.gap_50}`}>
-      <Title />
+    <section className={`w-100 d-flex flex-column  ${classes.gap_50}`}>
+       <Title
+        text={{
+          firstText: "Women's Week",
+          secondText: "The Celebration Is On",
+          lastText:
+            "Fresh voices, fire fits, and new kicks. Shop a brand new collection inspired by strong women.",
+        }}
+      />
       <Slider {...slider.settings} className={classes.item_container}>
         {slider.data.map((item) => {
           return (
@@ -28,7 +35,7 @@ const Carousel = () => {
           );
         })}
       </Slider>
-    </div>
+    </section>
   );
 };
 export default Carousel;

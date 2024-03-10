@@ -3,7 +3,7 @@ import { generateId } from "../utils/halpers/generateId";
 
 const products = generateId();
 
-const todoSlice = createSlice({
+const productsSlice = createSlice({
   name: "products",
   initialState: {
     products: products,
@@ -26,5 +26,5 @@ const todoSlice = createSlice({
   },
 });
 
-export const { addProduct, editProduct, removeProduct } = todoSlice.actions;
-export default todoSlice.reducer;
+export const { addProduct, editProduct, removeProduct } = productsSlice.actions;
+export default productsSlice.reducer;
