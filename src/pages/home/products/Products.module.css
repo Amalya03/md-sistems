@@ -13,3 +13,22 @@
 .container {
   max-width: 300px;
 }
+
+.items_container {
+  justify-content:start
+}
+
+.data_container {
+  max-width: calc(4 * 300px + 3 * 20px + 40px);
+  padding: 0 20px;
+}
+
+.padding_x_20 {
+  padding: 0 20px 50px 20px;
+}
+
+@media screen and (max-width: 680px) {
+  .items_container {
+    justify-content: center
+  }
+}

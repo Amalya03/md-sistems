@@ -14,7 +14,6 @@ import VerificationModal from "../../../components/modal/verificationModal";
 const ProductsData = ({
   status,
   filteredData,
-  setFilteredData,
   editProduct,
 }) => {
   const dispatch = useDispatch();
@@ -24,7 +23,7 @@ const ProductsData = ({
   const [productId, setProductId] = useState("");
 
   const data = useSelector((item) => item.products.products);
-  const productData = !status ? data?.slice(0, 5) : filteredData;
+  const productData = !status ? data?.slice(0, 4) : filteredData;
 
   const showModal = (id) => {
     setProductId(id);
@@ -39,7 +38,7 @@ const ProductsData = ({
   return (
     <>
       <div
-        className={` ${classes.gap_50} d-flex flex-wrap justify-content-center w-100 ${classes.padding_bottom_50} `}
+        className={` ${classes.gap_50} d-flex flex-wrap justify-content-center w-100 ${!status ? classes.padding_x_20 : ''} ${classes.padding_bottom_50} `}
       >
         {!status && (
           <Title
@@ -52,7 +51,7 @@ const ProductsData = ({
           />
         )}
         <div
-          className={`d-flex flex-wrap w-100 justify-content-center ${classes.gap_20} `}
+          className={`d-flex flex-wrap w-100 ${classes.gap_20} ${!status ? 'justify-content-center' : classes.items_container}`}
         >
           {productData?.map((item, index) => {
             return (
@@ -80,7 +79,8 @@ const ProductsData = ({
             }}
           />
         )}
-      </div>
+        </div>
+
       <VerificationModal
         show={show}
         onHide={() => setShow(false)}
