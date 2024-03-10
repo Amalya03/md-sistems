@@ -11,10 +11,15 @@ import { Button } from "../../../components/buttons";
 import ProductCard from "../../../components/card/product";
 import VerificationModal from "../../../components/modal/verificationModal";
 
-const ProductsData = ({ status, filteredData, setFilteredData, editProduct }) => {
+const ProductsData = ({
+  status,
+  filteredData,
+  setFilteredData,
+  editProduct,
+}) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  
+
   const [show, setShow] = useState(false);
   const [productId, setProductId] = useState("");
 
@@ -33,8 +38,8 @@ const ProductsData = ({ status, filteredData, setFilteredData, editProduct }) =>
 
   return (
     <>
-      <section
-        className={` ${classes.gap_50} d-flex flex-wrap justify-content-center ${classes.padding_bottom_50}`}
+      <div
+        className={` ${classes.gap_50} d-flex flex-wrap justify-content-center w-100 ${classes.padding_bottom_50} `}
       >
         {!status && (
           <Title
@@ -47,7 +52,7 @@ const ProductsData = ({ status, filteredData, setFilteredData, editProduct }) =>
           />
         )}
         <div
-          className={`d-flex flex-wrap w-100 justify-content-center ${classes.gap_20}`}
+          className={`d-flex flex-wrap w-100 justify-content-center ${classes.gap_20} `}
         >
           {productData?.map((item, index) => {
             return (
@@ -75,7 +80,7 @@ const ProductsData = ({ status, filteredData, setFilteredData, editProduct }) =>
             }}
           />
         )}
-      </section>
+      </div>
       <VerificationModal
         show={show}
         onHide={() => setShow(false)}

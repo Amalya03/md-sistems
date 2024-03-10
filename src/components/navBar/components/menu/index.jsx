@@ -3,13 +3,16 @@ import { Link, useNavigate } from "react-router-dom";
 
 import classes from "./Menu.module.css";
 
-import { linkes, navigateToElement } from "../../../../utils/halpers/navBar/menu";
+import {
+  linkes
+} from "../../../../utils/halpers/navBar/menu";
+import { navigateToElement } from "../../../../utils/halpers/navigateToElement/navigateToElement";
 
 const Menu = () => {
   const navigate = useNavigate();
 
   return (
-    <div className={`d-flex ${classes.gap_30}`}>
+    <div className={`d-flex ${classes.menu_container}`}>
       {linkes.map((item, index) => {
         return (
           <Link

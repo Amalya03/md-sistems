@@ -61,3 +61,10 @@
 .gap_10 {
   gap: 5px;
 }
+
+@media screen and (max-width: 980px) {
+  .select_container {
+    top: 50px;
+    width: 100%;
+  }
+}

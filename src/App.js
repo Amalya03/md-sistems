@@ -3,9 +3,9 @@ import "./global.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/home";
+import AboutUs from "./pages/aboutUs";
 import Products from "./pages/products";
 import RootLayout from "./pages/RootLayout";
-import AboutUs from "./pages/aboutUs";
 
 const router = createBrowserRouter([
   {

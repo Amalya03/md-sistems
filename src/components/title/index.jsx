@@ -2,7 +2,7 @@ import React from "react";
 
 import classes from "./Title.module.css";
 
-const Title = ({text}) => {
+const Title = ({ text }) => {
   const texts = ["firstText", "secondText", "lastText"];
 
   return (

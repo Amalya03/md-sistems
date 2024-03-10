@@ -1,3 +1,10 @@
 .card_item {
-    gap: 50px;
+  gap: 50px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .card_item {
+    flex-wrap: wrap;
+  }
 }

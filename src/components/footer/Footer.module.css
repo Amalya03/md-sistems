@@ -1,5 +1,18 @@
 .footer_container {
-    background: var(--grey);
-    height: 300px;
-    bottom: 0;
-} 
+  background: var(--grey);
+  height: 300px;
+  bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .footer_container {
+    align-items: start !important;
+    bottom: 80px !important;
+  }
+  #root {
+    padding: 0 0 380px 0;
+  }
+  .items_container {
+    flex-wrap: wrap;
+  }
+}

@@ -1,9 +1,15 @@
 .menu_item {
-    color: var(--black);
-    font-weight: 550;
-    font-size: 18px;
+  color: var(--black);
+  font-weight: 550;
+  font-size: 18px;
+}
+
+.menu_container {
+  gap: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .menu_container {
+    display: none !important;
   }
-  
-  .gap_30 {
-    gap: 30px;
-  }
+}

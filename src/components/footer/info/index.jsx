@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import classes from "./Info.module.css";
 
 import { data } from "../../../utils/halpers/footer/data";
+import { navigateToElement } from "../../../utils/halpers/navigateToElement/navigateToElement";
 
 const Info = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="d-flex align-items-center">
       <div
@@ -22,8 +25,16 @@ const Info = () => {
                     <Link
                       key={item}
                       className={`w-100 ${classes.link}`}
-                      to={`${data.links[index][index1]}`}
-                      onClick={() => window.scrollTo(0, 0)}
+                      to={`${
+                        item === "Contacts"
+                          ? "#contacts"
+                          : data.links[index][index1]
+                      }`}
+                      onClick={() => {
+                        item === "Contacts" &&
+                          navigateToElement(navigate, "contacts");
+                        window.scrollTo(0, 0);
+                      }}
                     >
                       {item}
                     </Link>
