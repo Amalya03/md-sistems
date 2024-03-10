@@ -27,7 +27,7 @@ code {
 
 @media screen and (max-width: 600px) {
   #root {
-      padding: 0 0 380px 0;
+      padding: 0 0 430px 0;
   }
 }
 
@@ -46,7 +46,7 @@ code {
 .modal-content {
   position: absolute !important;
   overflow-y: auto;
-  height: 650px;
+  max-height: 650px;
 }
 
 .modal-dialog {

@@ -11,7 +11,7 @@ const Info = () => {
   return (
     <div className="d-flex align-items-center">
       <div
-        className={`d-flex justify-content-evenly align-items-start ${classes.gap_20}`}
+        className={`d-flex justify-content-evenly align-items-start ${classes.gap_20} ${classes.container_mobile}`}
       >
         {data.titles.map((title, index) => {
           return (

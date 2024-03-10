@@ -18,6 +18,7 @@ const TabBar = () => {
             to={item.link}
             onClick={() => {
               index === 1 && navigateToElement(navigate, "contacts");
+              window.scrollTo(0, 0);
             }}
             key={item.name}
             className={classes.link}

@@ -1,28 +1,47 @@
 .gap_20 {
-    gap: 20px;
+  gap: 20px;
 }
 
 .title {
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--white);
 }
 
 .link {
-    color: var(--white);
-    font-size: 14px;
+  color: var(--white);
+  font-size: 14px;
 }
 
 .gap_10 {
-    gap: 10px;
+  gap: 10px;
 }
 
 .link:hover {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container_mobile {
+    justify-content: center;
+    margin: 0 20px;
   }
+}
 
 @media screen and (max-width: 480px) {
-    .link {
-        font-size: 12px;
-    }
+  .link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container_mobile {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .container_mobile {
+    margin: 0 5px;
+  }
 }
