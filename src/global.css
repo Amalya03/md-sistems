@@ -46,7 +46,7 @@ code {
 .modal-content {
   position: absolute !important;
   overflow-y: auto;
-  height: 650px;
+  max-height: 650px;
 }
 
 .modal-dialog {
