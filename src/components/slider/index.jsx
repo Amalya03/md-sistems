@@ -10,8 +10,10 @@ import { slider } from "../../utils/halpers/slider/slider";
 
 const Carousel = () => {
   return (
-    <section className={`w-100 d-flex flex-column  ${classes.gap_50}`}>
-       <Title
+    <section
+      className={`w-100 d-flex flex-column  ${classes.gap_50} ${classes.carousel_container}`}
+    >
+      <Title
         text={{
           firstText: "Women's Week",
           secondText: "The Celebration Is On",
@@ -24,11 +26,11 @@ const Carousel = () => {
           return (
             <div
               key={item}
-              className={`relative align-center ${classes.item} flex h-full justify-center`}
+              className={`relative align-center ${classes.item} d-flex justify-content-center`}
             >
               <img
                 src={`./assets/slider/${item}.jpg`}
-                className="h-100"
+                className={`h-100 ${classes.img}`}
                 alt=""
               />
             </div>

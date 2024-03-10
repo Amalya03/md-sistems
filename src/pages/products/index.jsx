@@ -40,9 +40,11 @@ const Products = () => {
     const requiredKeys = ["title", "description", "quantity", "price"];
     const allKeysPresent = requiredKeys.every((key) => keys.includes(key));
     if (show === "add") {
-      setMessage(allKeysPresent ? 
-        "Congratulations! You're ready to add a new product."
-        : "Kindly provide the necessary details for the Title, Description, Quantity, and Price fields");
+      setMessage(
+        allKeysPresent
+          ? "Congratulations! You're ready to add a new product."
+          : "Kindly provide the necessary details for the Title, Description, Quantity, and Price fields"
+      );
       setDisabled(!allKeysPresent);
     }
   }, [show, keys]);
@@ -60,7 +62,10 @@ const Products = () => {
   };
 
   const updateKeys = (e, name) => {
-    const updatedKeys = e.target.value !== "" ? [...keys, name] : keys.filter((item) => item !== name);
+    const updatedKeys =
+      e.target.value !== ""
+        ? [...keys, name]
+        : keys.filter((item) => item !== name);
     setKeys(updatedKeys);
   };
 
@@ -71,15 +76,21 @@ const Products = () => {
   };
 
   const dispatchProductAction = (name) => {
-    const updatedInfo = {...editableInfo,  id: uuidv4(), image: "./assets/products/card/nike.png" };
-    dispatch(name === "edit" ? editProduct(editableInfo) : addProduct(updatedInfo));
+    const updatedInfo = {
+      ...editableInfo,
+      id: uuidv4(),
+      image: "./assets/products/card/nike.png",
+    };
+    dispatch(
+      name === "edit" ? editProduct(editableInfo) : addProduct(updatedInfo)
+    );
     onHide();
-    setKeys([])
+    setKeys([]);
   };
 
   return (
     <>
-      <div
+      <section
         className={`w-100 flex-wrap d-flex ${classes.gap_50} justify-content-center`}
       >
         <PageTitle title="Products" />
@@ -102,7 +113,7 @@ const Products = () => {
             <NoDataDisplay />
           )}
         </div>
-      </div>
+      </section>
       <InformationModal
         message={message}
         disabled={disabled}

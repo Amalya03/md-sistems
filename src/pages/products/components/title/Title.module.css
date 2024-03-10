@@ -1,9 +1,9 @@
 .border {
-    border-bottom: 1px solid #778899;
+  border-bottom: 1px solid #778899;
 }
 
 .text {
-    color: var(--black);
-    font-weight: 600;
-    font-size: 30px;
+  color: var(--black);
+  font-weight: 600;
+  font-size: 30px;
 }

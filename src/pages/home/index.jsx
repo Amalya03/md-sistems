@@ -11,7 +11,7 @@ import ContactUs from "../../components/contactUs";
 const Home = () => {
   return (
     <div className={`d-flex flex-wrap ${classes.gap_150}`}>
-      <Header/>
+      <Header />
       <Carousel />
       <ContactUs />
       <ProductsData />

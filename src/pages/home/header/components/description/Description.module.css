@@ -1,4 +1,22 @@
 .description {
-    font-size: 40px;
-    color: var(--black);
+  font-size: 40px;
+  color: var(--black);
+}
+
+@media screen and (max-width: 660px) {
+  .description {
+    font-size: 30px;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .description {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .description {
+    font-size: 10px;
+  }
+}

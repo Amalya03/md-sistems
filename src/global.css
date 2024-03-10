@@ -25,6 +25,12 @@ code {
   padding: 0 0 300px 0;
 }
 
+@media screen and (max-width: 600px) {
+  #root {
+      padding: 0 0 380px 0;
+  }
+}
+
 .fade {
   opacity: 1 !important;
 }
@@ -40,6 +46,7 @@ code {
 .modal-content {
   position: absolute !important;
   overflow-y: auto;
+  height: 650px;
 }
 
 .modal-dialog {
@@ -60,4 +67,3 @@ button:hover {
   opacity: 0.5;
   cursor: pointer;
 }
-

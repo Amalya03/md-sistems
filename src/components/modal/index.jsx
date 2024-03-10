@@ -5,7 +5,7 @@ import Modal from "react-bootstrap/Modal";
 import classes from "./Modals.module.css";
 
 const Modals = (props) => {
-  const { children, onHide, size} = props;
+  const { children, onHide, size } = props;
 
   return (
     <Modal

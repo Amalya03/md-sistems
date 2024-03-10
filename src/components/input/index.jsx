@@ -1,7 +1,15 @@
 import React from "react";
 
-const Input = ({ id, onChange, style, type, placeholder, src, text, defaultValue}) => {
-    
+const Input = ({
+  id,
+  onChange,
+  style,
+  type,
+  placeholder,
+  src,
+  text,
+  defaultValue,
+}) => {
   return (
     <div className={style["containerStyle"]}>
       <label htmlFor={id} className={style["labelStyle"]}>

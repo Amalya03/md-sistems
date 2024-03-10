@@ -19,7 +19,7 @@ const ProductCard = (props) => {
   } = props;
 
   return (
-    <div className={`${classes.card_container} d-flex flex-wrap`}>
+    <div className={`${classes.card_container} d-flex flex-wrap w-100`}>
       <Image image={image} />
       <div
         className={`d-flex flex-wrap ${classes.padding_x_10} w-100 position-relative`}
