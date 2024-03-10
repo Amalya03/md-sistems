@@ -31,13 +31,6 @@ export const slider = {
           initialSlide: 2,
         },
       },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
     ],
   },
 
