@@ -25,12 +25,12 @@
 
 .text_white {
   color: transparent;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .text_black {
   color: var(--black);
-  transition: 2s;
+  transition: 2.5s;
 }
 
 .text {

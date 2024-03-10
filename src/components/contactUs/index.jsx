@@ -1,30 +1,35 @@
-import React from "react"
-import ContactUsCard from "./card"
-import { EMAIL, PHONENUMBER } from "../../constants/Constants"
-import Title from "../title"
+import React from "react";
 
-import classes from './ContactUs.module.css'
+import classes from "./ContactUs.module.css";
 
+import Title from "../title";
+import ContactUsCard from "./card";
+import { contactInfo } from "../../utils/halpers/contactUs/contactInfo";
 
 const ContactUs = () => {
-  const value = [EMAIL, PHONENUMBER]
-const data = { 'Email':`mailto:${EMAIL}`, 'Phone': `tel:${PHONENUMBER}`,}
-
   return (
-      <div className={`w-100 d-flex justify-content-center flex-wrap ${classes.card_item}`} id='contacts'>
-          <Title/>
-          <div className={`d-flex w-100 justify-content-center ${classes.card_item}`}>
-          {Object.keys(data).map((item, index) => {
-              return (
-                  <div key={item}  className={`justify-content-center d-flex`}>
-                      <ContactUsCard src={`/assets/contactUs/contact${item}.svg`} link={data[item]} value={value[index]} title={item}/>
-                  </div>
-              )
-
-          })}
+    <section
+      className={`w-100 d-flex justify-content-center flex-wrap ${classes.card_item}`}
+      id="contacts"
+    >
+      <Title
+        text={{
+          firstText: "HAPPY TO HELP YOU",
+          secondText: "HAVE QUESTIONS? GET IN TOUCH",
+          lastText: "CONTACT US FOR MORE INFORMATION.",
+        }}
+      />
+      <div
+        className={`d-flex w-100 justify-content-center ${classes.card_item}`}
+      >
+        {contactInfo.map(({ title, src, link, value }) => (
+          <div key={title} className={`justify-content-center d-flex`}>
+            <ContactUsCard src={src} link={link} value={value} title={title} />
           </div>
+        ))}
       </div>
-  )
-}
+    </section>
+  );
+};
 
-export default ContactUs
+export default ContactUs;

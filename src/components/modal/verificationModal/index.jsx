@@ -1,6 +1,7 @@
 import Modals from "..";
 import { Button } from "../../buttons";
 import classes from "./VerificationModal.module.css";
+import Title from "./title";
 
 const VerificationModal = (props) => {
   const { show, onHide, onClick } = props;
@@ -10,11 +11,7 @@ const VerificationModal = (props) => {
       <div
         className={`d-flex justify-content-center w-100 flex-wrap ${classes.modal_container} ${classes.gap_50} `}
       >
-        <div
-          className={`w-100 d-flex justify-content-center align-items-center`}
-        >
-          <span className={`text-center ${classes.text}`}>Are you sure ?</span>
-        </div>
+        <Title title={'Are you sure ?'}/>
         <Button onClick={onClick} text="Yes" />
         <Button onClick={onHide} text="No" status={true}/>
       </div>

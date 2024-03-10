@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import todoReducer from "./todoSlice";
+import todoReducer from "./productsSlice";
 import {
   persistStore,
   persistReducer,
@@ -22,8 +22,6 @@ const rootReducer = combineReducers({
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
-
-
 
 const store = configureStore({
   reducer: persistedReducer,
